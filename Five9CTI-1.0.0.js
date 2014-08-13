@@ -1073,7 +1073,7 @@ var Five9CTI = (function () {
                                     response = me.convertTypes(parameters, response);
                                 }
                                 // return the 'return' response
-                                if (!!response['return']) {
+                                if ('return' in response) {
                                     retobj = response['return'];
                                 }
                                 break;
